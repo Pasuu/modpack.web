@@ -77,6 +77,13 @@ function generateModpackCards(modpacks) {
         </a>` : ''
     }
 
+    ${data.link.bilibiliopus ? 
+        `<a href="https://www.bilibili.com/opus/${data.link.bilibiliopus}" class="link-btn" target="_blank">
+            <img src="img/bilibili-line-red.svg" alt="B站文章红" class="icon"> B站文章
+        </a>` : ''
+    }
+
+
     ${data.link.bilibilidwred ? 
         `<a href="https://www.bilibili.com/read/${data.link.bilibilidwred}" class="link-btn" target="_blank">
             <img src="img/bilibili-line-red.svg" alt="B站文章红" class="icon"> B站文章
