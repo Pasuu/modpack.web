@@ -45,7 +45,6 @@ function createModpackCard(name, data) {
     card.className = 'modpack-card';
     card.innerHTML = `
         <div class="card-header">
-            <!-- 移除了内联的 onerror 处理 -->
             <img data-src="${data.img}" alt="${name}" class="modpack-img lazy-load">
             <h3 class="modpack-name">${name}</h3>
         </div>
