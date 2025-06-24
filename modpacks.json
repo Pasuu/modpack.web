@@ -116,7 +116,7 @@
       "mcmod": "478",
       "github": "ShaBaiTianCN/Andromeda-Automation",
       "anyijun": true,
-      "download": "anyijun/Andromeda-Automation/2.1-CN-Andromeda-Automation-7.6.1.zip",
+      "download": "Andromeda-Automation/2.1-CN-Andromeda-Automation-7.6.1.zip",
       "tags": "1.18.2,Forge,冒险,地图,科技,空岛,魔法"
     }
   },
@@ -188,7 +188,7 @@
       "bilibili": "628493139",
       "curseforge": "better-mc-skyblock",
       "VM0": true,
-      "download": "bettermc skyblock/bettermc skyblock_v5.0汉化 by cat.rar",
+      "download0": "bettermc skyblock/bettermc skyblock_v5.0汉化 by cat.rar",
       "tags": "1.16.5,Forge,PvP,任务,休闲,水槽,空岛"
     }
   },
@@ -308,7 +308,7 @@
       "mcmod": "460",
       "VM0": true,
       "baidupan": "1OI533N2IMHssFsoGm5o0lg?pwd=x068",
-      "download": "vm/blackstone block/blackstone blockv1.0.4汉化补丁.zip",
+      "download0": "blackstone block/blackstone blockv1.0.4汉化补丁.zip",
       "tags": "1.16.5,Forge,任务,大型,硬核,科技,空岛,魔法"
     }
   },
@@ -338,7 +338,7 @@
       "bilibili": "6575218",
       "curseforge": "calculator-skies",
       "anyijun": true,
-      "download": "anyijun/Calculator-Skies/Calculator-Skies_1.14.1-Hotfix_zh_cn.zip",
+      "download": "Calculator-Skies/Calculator-Skies_1.14.1-Hotfix_zh_cn.zip",
       "tags": "1.12.2,Forge,任务,科技,空岛,魔法"
     }
   },
@@ -367,7 +367,7 @@
       "mcmod": "493",
       "VM0": true,
       "baidupan": "1OI533N2IMHssFsoGm5o0lg?pwd=x068",
-      "download": "vm/Caveopolis/Caveopolis4.1汉化补丁.zip",
+      "download0": "Caveopolis/Caveopolis4.1汉化补丁.zip",
       "tags": "1.18.2,Forge,任务,科技,空岛"
     }
   },
@@ -399,7 +399,7 @@
       "mcmod": "529",
       "github": "ShaBaiTianCN/Chroma-Endless",
       "anyijun": true,
-      "download": "anyijun/Chroma-Endless/1.1-CN-Chroma-Endless-1.0.5.zip",
+      "download": "Chroma-Endless/1.1-CN-Chroma-Endless-1.0.5.zip",
       "tags": "1.16.5,Forge,任务,冒险,大型,硬核,科技,魔法"
     }
   },
@@ -446,7 +446,7 @@
       "mcmod": "314",
       "github": "ShaBaiTianCN/Chroma-Technology-2",
       "anyijun": true,
-      "download": "anyijun/Chroma-Technology-2/1.0-CN-Chroma-Technology-2-1.2.1.zip",
+      "download": "Chroma-Technology-2/1.0-CN-Chroma-Technology-2-1.2.1.zip",
       "tags": "1.16.5,Forge,任务,冒险,大型,硬核,科技,魔法"
     }
   },
@@ -462,7 +462,7 @@
       "mcmod": "30",
       "github": "CFPAOrg/Modpack-GuideBook-i18n",
       "anyijun": true,
-      "download": "anyijun/Compact-Claustrophobia/汉化补丁Compact-Claustrophobia-1.3.5.2.zip",
+      "download": "Compact-Claustrophobia/汉化补丁Compact-Claustrophobia-1.3.5.2.zip",
       "tags": "1.12.2,Forge,任务,地图,科技,空岛"
     }
   },
@@ -662,7 +662,7 @@
       "curseforge": "delivery-inc",
       "mcmod": "288",
       "anyijun": true,
-      "download": "anyijun/Delivery-Inc/汉化补丁 Delivery-Inc 1.0.24.zip",
+      "download": "Delivery-Inc/汉化补丁 Delivery-Inc 1.0.24.zip",
       "tags": "1.16.5,Forge,任务,科技,轻量"
     }
   },
@@ -718,7 +718,7 @@
       "mcmod": "503",
       "github": "ShaBaiTianCN/Encrypted_",
       "anyijun": true,
-      "download": "anyijun/Encrypted/Encrypted_汉化补丁V2.2.zip",
+      "download": "Encrypted/Encrypted_汉化补丁V2.2.zip",
       "tags": "1.18.2,Forge,任务,大型,科技,魔法"
     }
   },
@@ -899,7 +899,7 @@
       "mcmod": "293",
       "VM0": true,
       "baidupan": "1OI533N2IMHssFsoGm5o0lg?pwd=x068",
-      "download": "vm/Feed the Singularity/Feed the Singularity1.11汉化.zip",
+      "download0": "Feed the Singularity/Feed the Singularity1.11汉化.zip",
       "tags": "1.16.5,Forge,任务,休闲,科技,轻量"
     }
   },
@@ -962,7 +962,7 @@
       "mcmod": "568",
       "github": "ShaBaiTianCN/FTB-Inferno",
       "anyijun": true,
-      "download": "anyijun/FTB-Inferno/1.3-CN-FTB-Inferno-1.3.0.zip",
+      "download": "FTB-Inferno/1.3-CN-FTB-Inferno-1.3.0.zip",
       "tags": "1.18.2,Forge,任务,冒险,硬核,科技,魔法"
     }
   },
@@ -1156,7 +1156,7 @@
       "mcmod": "49",
       "github": "Wulian233/FTB-Sky-Odyssey-Translation",
       "VM0": true,
-      "download": "vm/FTB Sky Odyssey/FTB-Sky-Odyssey-Translation--1.3.zip",
+      "download0": "FTB Sky Odyssey/FTB-Sky-Odyssey-Translation--1.3.zip",
       "tags": "1.12.2,Forge,任务,休闲,冒险,科技,空岛,魔法"
     }
   },
@@ -1203,7 +1203,7 @@
       "mcmod": "403",
       "github": "ShaBaiTianCN/Greed-the-Resource-3-Factory",
       "anyijun": true,
-      "download": "anyijun/Greed-the-Resource-3-Factory/1.0-汉化补丁-Greed-the-Resource-3-Factory-V5.6.zip",
+      "download": "Greed-the-Resource-3-Factory/1.0-汉化补丁-Greed-the-Resource-3-Factory-V5.6.zip",
       "tags": "1.16.5,Forge,任务,冒险,大型,科技,魔法"
     }
   },
@@ -1294,7 +1294,7 @@
       "curseforge": "hungry-for-tech-2",
       "VM0": true,
       "baidupan": "1OI533N2IMHssFsoGm5o0lg?pwd=x068",
-      "download": "vm/Hungry For Tech 2/HungryForTech2汉化补丁v1.0.zip",
+      "download": "Hungry For Tech 2/HungryForTech2汉化补丁v1.0.zip",
       "tags": "1.20.1,Forge,任务,科技,空岛"
     }
   },
@@ -1309,12 +1309,12 @@
       "curseforge": "magic-ice-tech",
       "github": "VM-Chinese-translate-group/-ice-",
       "VM0": true,
-      "download": "vm/ice/【ice】ice整合包汉化补丁-VM汉化组-第一版.zip",
+      "download": "ice/【ice】ice整合包汉化补丁-VM汉化组-第一版.zip",
       "tags": "1.16.5,Forge,任务,科技,空岛,魔法"
     }
   },
   "Index": {
-    "generated": "2025-06-23T01:08:27.534Z",
+    "generated": "2025-06-23T00:26:47.463Z",
     "count": 155,
     "files": [
       "Aged.json",
@@ -1498,7 +1498,7 @@
       "bilibili": "6575218",
       "curseforge": "infernopolis",
       "anyijun": true,
-      "download": "anyijun/Infernopolis/Infernopolis_2.1_zh_cn.zip",
+      "download": "Infernopolis/Infernopolis_2.1_zh_cn.zip",
       "tags": "1.16.5,Forge,任务,冒险,空岛,魔法"
     }
   },
@@ -1514,7 +1514,7 @@
       "mcmod": "513",
       "VM0": true,
       "baidupan": "1OI533N2IMHssFsoGm5o0lg?pwd=x068",
-      "download": "vm/Infinity Foundation/Infinity Foundation v2.0汉化补丁.zip",
+      "download0": "Infinity Foundation/Infinity Foundation v2.0汉化补丁.zip",
       "tags": "1.18.2,Forge,任务,科技,空岛,轻量,魔法"
     }
   },
@@ -1546,7 +1546,7 @@
       "mcmod": "482",
       "github": "KlparetlR/Jetpack-Cat",
       "VM0": true,
-      "download": "vm/Jetpack Cat（喷气背包猫）汉化-5.1-KlparetlR-V2.4.0.zip",
+      "download": "Jetpack Cat（喷气背包猫）汉化-5.1-KlparetlR-V2.4.0.zip",
       "tags": "1.16.5,Forge,任务,冒险,大型,建筑,硬核,科技"
     }
   },
@@ -1752,7 +1752,7 @@
       "mcmod": "683",
       "github": "VM-Chinese-translate-group/Musketeer-l10n-CN",
       "VM0": true,
-      "download": "vm/Musketeer/Musketeer-CN-For-beta7-0.1.2.zip",
+      "download": "Musketeer/Musketeer-CN-For-beta7-0.1.2.zip",
       "tags": "1.19.2,Forge,休闲,冒险,轻量"
     }
   },
@@ -1810,7 +1810,7 @@
       "curseforge": "not-too-complicated-2",
       "mcmod": "432",
       "anyijun": true,
-      "download": "anyijun/Not Too Complicated 2/汉化补丁Not Too Complicated 2-1.4.0(f1.0).zip",
+      "download": "Not Too Complicated 2/汉化补丁Not Too Complicated 2-1.4.0(f1.0).zip",
       "tags": "1.16.5,Forge,任务,冒险,大型,建筑,科技,魔法"
     }
   },
@@ -1953,7 +1953,7 @@
       "mcmod": "444",
       "github": "ShaBaiTianCN/Proletaria-Expert",
       "anyijun": true,
-      "download": "anyijun/Proletaria-Expert/1.1-CN-Proletaria-Expert-1.1.1.zip",
+      "download": "Proletaria-Expert/1.1-CN-Proletaria-Expert-1.1.1.zip",
       "tags": "1.16.5,Forge,任务,冒险,大型,硬核,科技,魔法"
     }
   },
@@ -1998,7 +1998,7 @@
       "mcmod": "452",
       "github": "ShaBaiTianCN/Restrict-Skyblock",
       "anyijun": true,
-      "download": "anyijun/Restrict Skyblock/汉化Restrict Skyblock 2.5.zip",
+      "download": "Restrict Skyblock/汉化Restrict Skyblock 2.5.zip",
       "tags": "1.16.5,Forge,任务,冒险,地图,大型,科技,魔法"
     }
   },
@@ -2056,7 +2056,7 @@
       "curseforge": "rustic-waters-ii",
       "mcmod": "398",
       "anyijun": true,
-      "download": "anyijun/Rustic Waters II/任务书汉化Rustic Waters II 1.16.zip",
+      "download": "Rustic Waters II/任务书汉化Rustic Waters II 1.16.zip",
       "tags": "1.16.5,Forge,任务,冒险,科技,魔法"
     }
   },
@@ -2071,7 +2071,7 @@
       "curseforge": "seaopolis",
       "mcmod": "218",
       "anyijun": true,
-      "download": "anyijun/Seaopolis/Seaopolis_9.0_zh_cn.zip",
+      "download": "Seaopolis/Seaopolis_9.0_zh_cn.zip",
       "tags": "1.16.5,Forge,任务,冒险,科技,空岛"
     }
   },
@@ -2159,7 +2159,7 @@
       "curseforge": "skyopolis-4",
       "mcmod": "284",
       "anyijun": true,
-      "download": "anyijun/Skyopolis 4/Skyopolis 4 (7.3)汉化20210406.zip",
+      "download": "Skyopolis 4/Skyopolis 4 (7.3)汉化20210406.zip",
       "tags": "1.16.5,Forge,任务,硬核,科技,空岛,魔法"
     }
   },
@@ -2175,7 +2175,7 @@
       "mcmod": "445",
       "github": "ShaBaiTianCN/Skyopolis-5",
       "anyijun": true,
-      "download": "anyijun/Skyopolis-5/1.1-CN-Skyopolis-5-3.0.zip",
+      "download": "Skyopolis-5/1.1-CN-Skyopolis-5-3.0.zip",
       "tags": "1.18.2,Forge,任务,冒险,科技,空岛"
     }
   },
@@ -2204,7 +2204,7 @@
       "mcmod": "550",
       "VM0": true,
       "baidupan": "1OI533N2IMHssFsoGm5o0lg?pwd=x068",
-      "download": "vm/Sky Bees 2/Sky Bees 2 1.4.1汉化补丁.zip",
+      "download0": "Sky Bees 2/Sky Bees 2 1.4.1汉化补丁.zip",
       "tags": "1.16.5,Forge,任务,大型,科技,空岛,魔法"
     }
   },
@@ -2276,7 +2276,7 @@
       "curseforge": "staged-learning",
       "mcmod": "132",
       "anyijun": true,
-      "download": "anyijun/Staged-Learning/汉化补丁 Staged-Learning-2.1.0.rar",
+      "download": "Staged-Learning/汉化补丁 Staged-Learning-2.1.0.rar",
       "tags": "1.12.2,Forge,任务,科技"
     }
   },
@@ -2291,10 +2291,10 @@
       "curseforge": "star-factory",
       "mcmod": "140",
       "anyijun": true,
-      "download1": "anyijun/Star Factory/Star Factory-1.1.0.zip",
+      "download1": "Star Factory/Star Factory-1.1.0.zip",
       "VM0": true,
       "baidupan": "1OI533N2IMHssFsoGm5o0lg?pwd=x068",
-      "download": "vm/Star Factory/Star Factory汉化.rar",
+      "download0": "Star Factory/Star Factory汉化.rar",
       "tags": "1.12.2,Forge,任务,地图,空岛,轻量,魔法"
     }
   },
@@ -2395,7 +2395,7 @@
       "curseforge": "the-nuclear-wasteland",
       "mcmod": "251",
       "VM0": true,
-      "download": "vm/The Nuclear Wasteland/核荒原0.2.5 橡树树苗汉化补丁.rar",
+      "download0": "The Nuclear Wasteland/核荒原0.2.5 橡树树苗汉化补丁.rar",
       "tags": "1.12.2,Forge,冒险,大型,硬核"
     }
   },
