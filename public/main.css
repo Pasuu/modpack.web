@@ -549,3 +549,31 @@ footer {
 .modpack-img.loaded {
     opacity: 1;
 }
+
+#upload-container {
+    position: absolute;
+    top: 40px;
+    right: 30%;
+    transform: translateY(-50%);
+    z-index: 101; 
+    padding: 8px 15px;
+    border-radius: 8px;
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#upload-container::before {
+    content: "点此上传汉化包<10MB";
+    display: block;
+    font-size: 14px;
+    color: #a0a0a0;
+    margin-bottom: 3px; 
+    white-space: nowrap; 
+}
+
+/* 移动端隐藏上传按钮 */
+@media (max-width: 900px) {
+    #upload-container {
+        display: none;
+    }
+}

@@ -5,11 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/logo.ico" />
     <title>Minecraft 整合包汉化</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@1/web/uc-file-uploader-regular.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <header>
+        <script type="module">
+
+  import * as UC from 'https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@1/web/uc-file-uploader-regular.min.js';
+  UC.defineComponents(UC);
+
+            </script>
+
+
         <div class="header-content">
             <div class="header-row">
                 <div class="logo">
@@ -32,6 +41,25 @@
                 </div>
             </div>
         </div>
+
+
+                <div id="upload-container">
+                 
+            <uc-file-uploader-regular
+                ctx-name="my-uploader"
+                class="uc-light"
+            ></uc-file-uploader-regular>
+        </div>
+
+            <uc-config
+        ctx-name="my-uploader"
+        use-cloud-image-editor="false"
+        source-list="local"
+        pubkey="29360e4a2c470e49ac03"
+    ></uc-config>
+    
+    <uc-upload-ctx-provider ctx-name="my-uploader"></uc-upload-ctx-provider>
+    
     </header>
     
     <main>
