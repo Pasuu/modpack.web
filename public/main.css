@@ -491,3 +491,61 @@ footer {
     font-weight: bold;
     color: #8BC34A;
 }
+
+
+/* 懒加载指示器 */
+.lazy-load-indicator {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 20px;
+    color: #8BC34A;
+    display: none;
+}
+
+/* 无结果提示 */
+.no-results {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 40px;
+    color: #8BC34A;
+}
+
+/* 渲染优化 */
+.modpacks-grid {
+    contain: strict layout;
+    will-change: transform;
+}
+
+.modpack-card {
+    will-change: transform, opacity;
+}
+
+/* 图片加载过渡 */
+.modpack-img {
+    background: linear-gradient(45deg, #1a2a3a, #0d1b2a);
+    transition: opacity 0.3s;
+}
+
+/* 加载动画 */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.no-results {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 40px;
+    color: #8BC34A;
+    font-size: 1.2rem;
+}
+
+.modpack-img {
+    transition: opacity 0.5s ease;
+    opacity: 0;
+    background: linear-gradient(45deg, #1a2a3a, #0d1b2a);
+}
+
+.modpack-img.loaded {
+    opacity: 1;
+}
