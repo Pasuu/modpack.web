@@ -96,8 +96,8 @@
     <div id="upload-modal" class="modal">
         <div class="modal-content">
             <span class="close-btn">&times;</span>
-            <h2><i class="fas fa-file-archive"></i> 上传汉化包</h2>
-            <p class="modal-subtitle">请上传压缩格式的汉化包文件 (.zip, .rar, .7z)</p>
+            <h2><i class="fas fa-file-archive"></i> 上传整合包</h2>
+            <p class="modal-subtitle">请上传压缩格式的整合包文件 (.zip, .rar, .7z)</p>
             
             <div class="upload-area" id="file-drop-area">
                 <div class="upload-icon">
@@ -114,6 +114,10 @@
                 <p><i class="fas fa-weight-hanging"></i> <span id="file-size"></span></p>
             </div>
             
+            <div class="progress-container">
+                <div class="progress-bar" id="upload-progress"></div>
+                <div class="progress-text" id="progress-text">0%</div>
+            </div>
             
             <div class="modal-actions">
                 <button id="start-upload-btn" disabled>
@@ -138,6 +142,7 @@
 <script type="module">
     import { initUpload } from './js/upload.js';
     const BLOB_TOKEN = 'vercel_blob_rw_zbHx28ydAPLRPDaT_X6pOAk0giSRa2rUtLmWiWh55G5ZOwR';
+    
     document.addEventListener('DOMContentLoaded', () => {
         initUpload(BLOB_TOKEN);
     });
