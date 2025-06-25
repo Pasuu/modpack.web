@@ -5,20 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/logo.ico" />
     <title>Minecraft 整合包汉化</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@1/web/uc-file-uploader-regular.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <header>
-        <script type="module">
-
-  import * as UC from 'https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@1/web/uc-file-uploader-regular.min.js';
-  UC.defineComponents(UC);
-
-            </script>
-
-
         <div class="header-content">
             <div class="header-row">
                 <div class="logo">
@@ -41,25 +32,6 @@
                 </div>
             </div>
         </div>
-
-
-                <div id="upload-container">
-                 
-            <uc-file-uploader-regular
-                ctx-name="my-uploader"
-                class="uc-light"
-            ></uc-file-uploader-regular>
-        </div>
-
-            <uc-config
-        ctx-name="my-uploader"
-        use-cloud-image-editor="false"
-        source-list="local"
-        pubkey="29360e4a2c470e49ac03"
-    ></uc-config>
-    
-    <uc-upload-ctx-provider ctx-name="my-uploader"></uc-upload-ctx-provider>
-    
     </header>
     
     <main>
@@ -110,12 +82,51 @@
           <div id="comment-icon" title="打开评论">
             <i class="fa fa-comments"></i>
           </div>
+
+          <div id="upload-icon" title="上传整合包">
+            <i class="fa fa-cloud-upload-alt"></i>
+          </div>
         
     </main>
     
     <footer>
         <p>Copyright © 2025 Pasuu by Modpack.top</p>
     </footer>
+
+    <div id="upload-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2><i class="fas fa-file-archive"></i> 上传汉化包</h2>
+            <p class="modal-subtitle">请上传压缩格式的汉化包文件 (.zip, .rar, .7z)</p>
+            
+            <div class="upload-area" id="file-drop-area">
+                <div class="upload-icon">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                </div>
+                <p>拖放文件到此处 或</p>
+                <button class="select-file-btn">选择文件</button>
+                <input type="file" id="file-input" accept=".zip,.rar,.7z">
+                <p class="file-type-hint">支持格式: ZIP, RAR, 7Z</p>
+            </div>
+            
+            <div class="file-info" id="selected-file-info" style="display: none;">
+                <p><i class="fas fa-file-archive"></i> <span id="file-name"></span></p>
+                <p><i class="fas fa-weight-hanging"></i> <span id="file-size"></span></p>
+            </div>
+            
+            
+            <div class="modal-actions">
+                <button id="start-upload-btn" disabled>
+                    <i class="fas fa-upload"></i> 开始上传
+                </button>
+                <button id="cancel-upload-btn" class="cancel-btn">
+                    <i class="fas fa-times"></i> 取消
+                </button>
+            </div>
+            
+            <div class="upload-result" id="upload-result"></div>
+        </div>
+    </div>
 
 <script src="js/modpackCards.js"></script>
 <script src="js/stats.js"></script>
@@ -124,5 +135,12 @@
 <script src="js/filters.js"></script>
 <script src="js/init.js"></script>
 <script src="js/main.js"></script>
+<script type="module">
+    import { initUpload } from './js/upload.js';
+    const BLOB_TOKEN = 'vercel_blob_rw_zbHx28ydAPLRPDaT_X6pOAk0giSRa2rUtLmWiWh55G5ZOwR';
+    document.addEventListener('DOMContentLoaded', () => {
+        initUpload(BLOB_TOKEN);
+    });
+</script>
 </body>
-</html> 
+</html>

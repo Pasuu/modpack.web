@@ -9,6 +9,7 @@ window.onload = function() {
     </div>
   `;
 
+  
   // 评论功能切换
   const icon = document.getElementById('comment-icon');
   const lvContainer = document.getElementById('lv-container');
@@ -195,4 +196,3 @@ function loadNextPage() {
   // 启动加载流程
   loadData();
 };
-
