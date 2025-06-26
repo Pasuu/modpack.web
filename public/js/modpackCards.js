@@ -14,9 +14,10 @@ function appendModpackCards(modpacks) {
     
     container.appendChild(fragment);
     initLazyLoad();
+    applyFilters();
 }
 
-// 创建单个卡片
+
 function createModpackCard(name, data) {
     const tags = data.link.tags.split(',').map(tag => tag.trim());
     const tagElements = tags.map(tag => `<span class="tag">${tag}</span>`).join('');
@@ -182,11 +183,11 @@ function initLazyLoad() {
         }
     });
     
-    // 统一的图片加载函数
+
     function loadImage(img) {
         if (!img.dataset.src) return;
         
-        // 确保只设置一次
+
         if (img.src) return;
         
         img.src = img.dataset.src;
@@ -201,4 +202,3 @@ function initLazyLoad() {
         };
     }
 }
-

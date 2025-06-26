@@ -1,4 +1,3 @@
-// filters.js (完整替换)
 let activeFilter = 'all';
 
 function setupFilters() {
@@ -20,41 +19,53 @@ function setupFilters() {
 }
 
 function applyFilters() {
-    const container = document.getElementById('modpacksContainer');
-    const cards = container.querySelectorAll('.modpack-card');
-    let hasVisibleCards = false;
+  const container = document.getElementById('modpacksContainer');
+  const cards = container.querySelectorAll('.modpack-card');
+  const searchInput = document.getElementById('searchInput');
+  const searchTerm = searchInput ? searchInput.value.toLowerCase() : '';
+  
+  let hasVisibleCards = false;
 
-    // 移除旧的无结果提示
-    const oldNoResults = container.querySelector('.no-results');
-    if (oldNoResults) oldNoResults.remove();
 
-    cards.forEach(card => {
-        let shouldShow = true;
-        
-        if (activeFilter === 'all') {
-            shouldShow = true;
-        } else if (activeFilter === 'download') {
-            const hasDownload = card.querySelector('.download-available') !== null;
-            shouldShow = hasDownload;
-        } else if (activeFilter.startsWith('version:')) {
-            const versionValue = activeFilter.split(':')[1];
-            const versionEl = card.querySelector('.version');
-            shouldShow = versionEl && versionEl.textContent.includes(versionValue);
-        } else if (activeFilter.startsWith('tag:')) {
-            const tagValue = activeFilter.split(':')[1];
-            const tagsText = card.querySelector('.modpack-tags').textContent;
-            shouldShow = tagsText.includes(tagValue);
-        }
-        
-        card.style.display = shouldShow ? 'block' : 'none';
-        if (shouldShow) hasVisibleCards = true;
-    });
+  const oldNoResults = container.querySelector('.no-results, .loading');
+  if (oldNoResults) oldNoResults.remove();
 
-    // 显示无结果提示
-    if (!hasVisibleCards) {
-        const noResults = document.createElement('div');
-        noResults.className = 'no-results';
-        noResults.innerHTML = '<i class="fas fa-search"></i><p>没有找到匹配的整合包</p>';
-        container.appendChild(noResults);
+  cards.forEach(card => {
+    let shouldShow = true;
+    
+
+    if (activeFilter === 'download') {
+      shouldShow = card.querySelector('.download-available') !== null;
+    } else if (activeFilter.startsWith('version:')) {
+      const filterVersion = activeFilter.split(':')[1];
+      const cardVersion = card.querySelector('.version')?.textContent || '';
+      shouldShow = cardVersion.includes(filterVersion);
+    } else if (activeFilter.startsWith('tag:')) {
+      const filterTag = activeFilter.split(':')[1];
+      const cardTags = card.querySelector('.modpack-tags')?.textContent || '';
+      shouldShow = cardTags.includes(filterTag);
     }
+    
+
+    if (shouldShow && searchTerm) {
+      const name = card.querySelector('.modpack-name').textContent.toLowerCase();
+      const tags = card.querySelector('.modpack-tags').textContent.toLowerCase();
+      const version = card.querySelector('.version')?.textContent.toLowerCase() || '';
+      
+      shouldShow = name.includes(searchTerm) || 
+                  tags.includes(searchTerm) || 
+                  version.includes(searchTerm);
+    }
+    
+    card.style.display = shouldShow ? 'block' : 'none';
+    if (shouldShow) hasVisibleCards = true;
+  });
+
+
+  if (!hasVisibleCards) {
+    const noResults = document.createElement('div');
+    noResults.className = 'no-results';
+    noResults.innerHTML = '<i class="fas fa-search"></i><p>没有找到匹配的整合包</p>';
+    container.appendChild(noResults);
+  }
 }

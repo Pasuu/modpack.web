@@ -18,18 +18,15 @@ export function initUpload(BLOB_TOKEN) {
     
     let selectedFile = null;
     
-    // 打开模态框
     uploadIcon.addEventListener('click', () => {
         uploadModal.style.display = 'block';
     });
     
-    // 关闭模态框
     closeBtn.addEventListener('click', () => {
         uploadModal.style.display = 'none';
         resetUploadForm();
     });
     
-    // 点击模态框外部关闭
     window.addEventListener('click', (e) => {
         if (e.target === uploadModal) {
             uploadModal.style.display = 'none';
@@ -37,12 +34,10 @@ export function initUpload(BLOB_TOKEN) {
         }
     });
     
-    // 取消上传
     cancelUploadBtn.addEventListener('click', () => {
         resetUploadForm();
     });
     
-    // 重置表单
     function resetUploadForm() {
         fileInput.value = '';
         selectedFile = null;
@@ -54,21 +49,18 @@ export function initUpload(BLOB_TOKEN) {
         fileDropArea.classList.remove('active');
     }
     
-    // 选择文件按钮点击事件
     selectFileBtn.addEventListener('click', () => {
         fileInput.click();
         fileDropArea.classList.add('active');
         setTimeout(() => fileDropArea.classList.remove('active'), 300);
     });
     
-    // 文件选择处理
     fileInput.addEventListener('change', (e) => {
         if (e.target.files.length > 0) {
             handleFileSelection(e.target.files[0]);
         }
     });
     
-    // 拖放功能
     fileDropArea.addEventListener('dragover', (e) => {
         e.preventDefault();
         fileDropArea.classList.add('active');
@@ -87,9 +79,7 @@ export function initUpload(BLOB_TOKEN) {
         }
     });
     
-    // 处理文件选择
     function handleFileSelection(file) {
-        // 验证文件类型
         const validExtensions = ['.zip', '.rar', '.7z'];
         const fileExtension = '.' + file.name.split('.').pop().toLowerCase();
         
@@ -110,7 +100,6 @@ export function initUpload(BLOB_TOKEN) {
         startUploadBtn.disabled = false;
     }
     
-    // 开始上传
     startUploadBtn.addEventListener('click', async () => {
         if (!selectedFile) return;
         
@@ -132,7 +121,6 @@ export function initUpload(BLOB_TOKEN) {
                 }
             });
             
-            // 上传成功
             showUploadResult('success', `汉化包上传成功！" target="_blank">${blob.url}</a>`);
             startUploadBtn.innerHTML = '<i class="fas fa-check"></i> 上传完成';
         } catch (error) {
@@ -143,12 +131,10 @@ export function initUpload(BLOB_TOKEN) {
         }
     });
     
-    // 显示上传结果
     function showUploadResult(type, message) {
         uploadResult.innerHTML = `<div class="result-${type}"><i class="fas fa-${type === 'success' ? 'check-circle' : 'exclamation-circle'}"></i> ${message}</div>`;
     }
     
-    // 格式化文件大小
     function formatFileSize(bytes) {
         if (bytes < 1024) return bytes + ' bytes';
         else if (bytes < 1048576) return (bytes / 1024).toFixed(1) + ' KB';
